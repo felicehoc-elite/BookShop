@@ -3,7 +3,15 @@ type Query {
     book(id: ID !): Book
 }
 
+type Mutation {
+    createBook(createBookInput: CreateBookInput): Book
+}
+
 type Book {
-    id: Int
+    id: String
+    name: String
+}
+
+input CreateBookInput {
     name: String
 }
