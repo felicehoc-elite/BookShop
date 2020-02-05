@@ -1,0 +1,9 @@
+type Query {
+    getBooks: [Book],
+    book(id: ID !): Book
+}
+
+type Book {
+    id: Int
+    name: String
+}
